@@ -16,4 +16,24 @@ class Stack
   def show
     @stack.dup
   end
-end 
+end
+
+#Exercise 2 FIFO
+class Queue
+  def initialize
+    @queue = []
+  end
+
+  def enqueue(el)
+    @queue.push(el)
+    el
+  end
+
+  def dequeue
+    @queue.shift
+  end
+
+  def show
+    @queue.dup
+  end
+end
