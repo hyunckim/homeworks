@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Hyun Kim Recipe</title>
+  </head>
+  <body>
+    <header>
+      <img src="appacademy.io/images/app-academy-logo.img" alt="App Academy Logo"
+    </header>
+    <nav>
+      <ul>
+        <li><a href="#description">Description</a>
+        <li><a href="#ingredients">Ingredients</a>
+        <li><a href="#preparation">Preperation</a>
+      </ul>
+    </nav>
+    <figure>
+      <img src="https://smittenkitchendotcom.files.wordpress.com/2010/04/shakshuka.jpg?w=1504" width ="400" height = "300">
+    </figure>
+
+    <h1>Shakshuka</h1>
+      <h2 id="descrption">Description</h2>
+      <p>
+        Shakshouka or shakshuka is a dish of eggs poached in a sauce of tomatoes, chili peppers, and onions, often spiced with cumin.
+      </p>
+        <a href = "https://en.wikipedia.org/wiki/Shakshouka">The history of Shakshuka</a>
+      <h2 id="ingredients">Ingredients</h2>
+        <ul>
+          <li>1/4 cup olive oil</li>
+          <li>5 Anaheim chiles</li>
+          <li>5 cloves garlic, crushed then sliced</li>
+          <li>1 teaspoon ground cumin</li>
+          <li>1 tablespoon paprika</li>
+          <li>1 28-ounce can whole peeled tomatoes</li>
+          <li>6 eggs</li>
+          <li>1/2 cup feta cheese, crumbled</li>
+          <li>1 tablespoon chopped flat-leaf parsley</li>
+          <li>Warm pitas, for serving</li>
+        </ul>
+      <h2 id="preparation">Preperation</h2>
+        <ol>
+          <li>Preheat the oven to 375F (191C)</li>
+
+          <li>Heat a large oven-safe skillet over medium heat, then add the olive oil, cumin, paprika, ground red pepper, salt and black pepper. Stir the spices for about 30 seconds to 1 minute, until they become fragrant.</li>
+
+          <li>Add the onion and bell pepper. Stir to coat with the oil and spices, then continue to cook and stir for about 15 to 20 minutes or until the veggies soften. You don't want them to brown so be sure the heat isn't too high.</li>
+
+          <li>Add the crushed and fresh tomato and bring to a low simmer. Cook for about 10 minutes more until the fresh tomato softens.</li>
+
+          <li>Now, you'll add the eggs. Make little wells in the tomato sauce and crack an egg into each one. Place the skillet in the oven and bake for 8 to 10 minutes or until the whites are set. Carefully remove from the oven (that handle is hot!), garnish with parsley and serve.</li>
+        </ol>
+      <section id="reviews">
+        <h2>Reviews</h2>
+        <form action="/reviews" method = "post">
+          <label for="name">Name</label>
+          <input id="name" type="text" name="name"><br>
+
+          <label for="ratings">Rating</label>
+            1<input type="radio" name="rating" value="1" checked>
+            2<input type="radio" name="rating" value="2" >
+            3<input type="radio" name="rating" value="3" >
+            4<input type="radio" name="rating" value="4" >
+            5<input type="radio" name="rating" value="5" ><br>
+
+          <label for="expertise">Cooking Expertise</label>
+          <select id ="expertise" name="expertise">
+            <option value="Cooking Expertise" disabled="true" selected="true">Cooking Expertise</option>
+            <option value="Sometimes Cook">Sometimes Cook</option>
+            <option value="Cook Everyday">Cook Everyday</option>
+            <option value="Cooking is a Hooby">Cooking is a Hobby</option>
+            <option value="Professional Chef">Professional Chef</option>
+          </select><br>
+
+          <label>Review<br>
+            <textarea name="review" rows="7" cols="50"></textarea>
+          </label>
+          <br>
+          <input type="submit" value="Submit Review">
+        </form>
+      </section>
+      <footer>
+        <p>Original Recipe by <a href = "http://www.saveur.com/article/Recipes/Eggs-Poached-in-Tomato-Sauce">SAVEUR</a>
+      </footer>
+  </body>
+</html>
