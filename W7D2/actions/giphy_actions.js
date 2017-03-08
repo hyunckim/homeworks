@@ -6,3 +6,8 @@ export const receiveSearchGiphys = giphys => ({
   type: RECEIVE_SEARCH_GIPHYS,
   giphys
 });
+
+export const fetchSearchGiphys = searchTerm => dispatch => (
+  APIUtil.fetchSearchGiphys(searchTerm)
+    .then(giphys => dispatch(receiveSearchGiphys(giphys)))
+);
